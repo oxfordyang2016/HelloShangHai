@@ -27,6 +27,7 @@ class Cat{
 	public Cat(int age,String name){
 		age=age;
 	}
+	
 	public void playgame(){
 		total=total+1;
 		System.out.println("i have join the game");
