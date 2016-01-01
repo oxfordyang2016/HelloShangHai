@@ -12,7 +12,7 @@ public class HelloShanghai {public static void main(String[]args){
 	Cat cat2=new Cat(45);
 	cat2.playgame();
 	System.out.println("现在猫仔玩耍的数量是"+Cat.total);//注释符号的使用需要注意/**/这里是一整段文字注销
-	//注意这里使用类名来代替不断访问的类变量也是可以的，这一点需要注意一下
+	//注意这里使用类名来代替不断访问的类变量也是可以的，这一点需要注意一下；恩
 	cat1.add(5,4);
 	cat1.result(5,8);
 	int res=cat1.result(7, 8);
