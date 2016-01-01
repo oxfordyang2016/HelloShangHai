@@ -21,7 +21,7 @@ public class HelloShanghai {public static void main(String[]args){
 }
 class Cat{
 	int age;
-	static int total=0;//	这里定义的是静态变量可以被很多对象共享 
+	static int total=0;//	这里定义的是静态亟待解决变量可以被很多对象共享 
 	String name;
 	String color;
 	public Cat(int age,String name){
