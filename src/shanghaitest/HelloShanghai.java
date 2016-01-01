@@ -16,9 +16,11 @@ public class HelloShanghai {public static void main(String[]args){
 	cat1.add(5,4);
 	cat1.result(5,8);
 	int res=cat1.result(7, 8);
-	System.out.println("res    "+cat1.result(8, 0));}
-
-}
+	System.out.println("res    "+cat1.result(8, 0));
+Clerk clerk1=new Clerk("yangming",23);
+//System.out.println("her name"+clerk1.name+clerk1.age);主义这一句是编译不出来的，因为clerkage被保护了起来；
+System.out.println("her name"+clerk1.name);
+}}
 class Cat{
 	int age;
 	static int total=0;//	这里定义的是静态亟待解决变量可以被很多对象共享 
@@ -55,3 +57,12 @@ class dog{
 	public void speak(){
 		System.out.println("狗名");
 	}}
+class Clerk{
+	public String name;
+	private int age;//这个变量我不想让别人访问到；
+	public Clerk(String name,int age){
+		name=name;
+		age=age;
+		
+	}  
+}
