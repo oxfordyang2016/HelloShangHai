@@ -17,9 +17,10 @@ public class HelloShanghai {public static void main(String[]args){
 	cat1.result(5,8);
 	int res=cat1.result(7, 8);
 	System.out.println("res    "+cat1.result(8, 0));
-Clerk clerk1=new Clerk("yangming",23);
+Clerk clerk1=new Clerk("yangming",23);//注意这里的初始化变量并没有受到private的影响；
 //System.out.println("her name"+clerk1.name+clerk1.age);主义这一句是编译不出来的，因为clerkage被保护了起来；
 System.out.println("her name"+clerk1.name);
+System.out.println("her name"+clerk1.name+clerk1.getage());//这下通过public的方法使得private保护的变量又可以访问
 }}
 class Cat{
 	int age;
@@ -61,8 +62,12 @@ class Clerk{
 	public String name;
 	private int age;//这个变量我不想让别人访问到；
 	public Clerk(String name,int age){
-		name=name;
-		age=age;
+		this.name=name;
+		this.age=age;//目前看来在构造方法里面还是要把this加上；
 		
 	}  
+	//通过一个方法去访问私有变量，但是要求在同一类里面
+	public int getage(){
+		return age;
+	}
 }
