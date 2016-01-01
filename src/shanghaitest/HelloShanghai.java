@@ -8,6 +8,10 @@ public class HelloShanghai {public static void main(String[]args){
 	Cat cat1=new Cat(13);
 	cat1.name="yangming";
 	cat1.speak();
+	cat1.playgame();
+	Cat cat2=new Cat(45);
+	cat2.playgame();
+	System.out.println("现在猫仔玩耍的数量是"+cat2.total);
 	cat1.add(5,4);
 	cat1.result(5,8);
 	int res=cat1.result(7, 8);
@@ -16,17 +20,23 @@ public class HelloShanghai {public static void main(String[]args){
 }
 class Cat{
 	int age;
+	static int total=0;//	这里定义的是静态变量可以被很多对象共享 
 	String name;
 	String color;
 	public Cat(int age,String name){
 		age=age;
 	}
+	public void playgame(){
+		total=total+1;
+		System.out.println("i have join the game");
+	} 
    public void speak()
    {
 	   System.out.println("i am g");}
    public Cat(int age){
 	   age=age;
 	   System.out.println("我是构造2");
+	   
    } 
 
 public void add(int a,int b)
@@ -42,5 +52,4 @@ class dog{
 	String name;
 	public void speak(){
 		System.out.println("狗名");
-	}
-}
+	}}
