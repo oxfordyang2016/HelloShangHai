@@ -6,6 +6,8 @@ public class Student {
 		Fee fee2=new Fee(17,"ming",643);
 		System.out.println(Fee.gettotalfee());
 		System.out.println("haoqiguai"+fee2.gettotalfee());//这里的两句都是一个效果
+		System.out.println("studengt");
+		
 	}
 
 
