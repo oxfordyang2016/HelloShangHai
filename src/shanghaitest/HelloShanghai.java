@@ -22,7 +22,7 @@ public class HelloShanghai {public static void main(String[]args){
 class Cat{
 	int age;
 	static int total=0;//	这里定义的是静态亟待解决变量可以被很多对象共享 
-	String name;//真的好其奇怪
+	String name;//真的好其奇怪，这里是代码的统一修改版本2016-1-1 22:37:00
 	String color;
 	public Cat(int age,String name){
 		age=age;
