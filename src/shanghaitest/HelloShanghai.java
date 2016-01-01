@@ -11,7 +11,7 @@ public class HelloShanghai {public static void main(String[]args){
 	cat1.playgame();
 	Cat cat2=new Cat(45);
 	cat2.playgame();
-	System.out.println("现在猫仔玩耍的数量是"+cat2.total);
+	System.out.println("现在猫仔玩耍的数量是"+cat2.total);//注释符号的使用需要注意/**/这里是一整段文字注销
 	cat1.add(5,4);
 	cat1.result(5,8);
 	int res=cat1.result(7, 8);
