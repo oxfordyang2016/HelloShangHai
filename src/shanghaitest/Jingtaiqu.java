@@ -12,7 +12,7 @@ public static void main(String []args){
 class Demo{
 	static int a=0;
 	static{
-		System.out.println("ex first");//这个是最先进行执行的，即使不创建对象也要执行；是静态变量所以都可以访问 
+		System.out.println("ex 4first");//这个是最先进行执行的，即使不创建对象也要执行；是静态变量所以都可以访问 
 	    a++;
 	    
 	}
