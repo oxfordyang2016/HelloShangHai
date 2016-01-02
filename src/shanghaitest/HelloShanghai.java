@@ -1,3 +1,4 @@
+//下面是打包命令
 package shanghaitest;
 
 
@@ -68,6 +69,6 @@ class Clerk{
 	}  
 	//通过一个方法去访问私有变量，但是要求在同一类里面
 	public int getage(){
-		return age;
+		return  this.age;//这里相当于一个接口
 	}
 }
