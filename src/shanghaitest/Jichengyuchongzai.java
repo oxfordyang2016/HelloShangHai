@@ -6,7 +6,7 @@ public class Jichengyuchongzai {
 		// TODO Auto-generated method stub
 Midstudent mid1=new Midstudent();
 mid1.age=34;
-mid1.getfee();
+mid1.getfee();//这样这里打出来的不再是年纪，确实是i love you
 colstudent col1=new colstudent();
 col1.salary=45;
 col1.age=32;
@@ -24,6 +24,7 @@ class St{
 	public String name;
 	private int fee;
 	public void getfee(){
+		//这里进一步讲解方法覆盖注意看好
 	
 		System.out.println(age);
 	}
@@ -32,6 +33,9 @@ class St{
 class Midstudent extends St{
 	int friends;
 	int salary;
+	public void getfee(){//这里将会对父类的方法进行覆盖，这里需要特别小心；
+		System.out.println("i love you");
+	}
 	
 }
 class colstudent extends Midstudent{
